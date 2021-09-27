@@ -91,7 +91,7 @@
                 var author = $('#iptAuthor').val()
                 var publisher = $('#iptPublisher').val()
                 if (bookname.length <= 0 || author.length <= 0 || publisher.length <= 0) {
-                    return alert('请填写完整信息')
+                    return alert('请填完整信息')
                 }
                 $.post('http://www.liulongbin.top:3006/api/addbook', {
                     bookname: bookname,
